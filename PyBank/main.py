@@ -2,7 +2,7 @@ import os
 
 import csv
 
-path='./PyBank/Resources/budget_data.csv'
+path='Resources/budget_data.csv'
 
 #path='C:/Users/MOHAMMED/hw3_1_test.csv'
 #path = os.path.join('..','Users','MOHAMMED','Python-Challenge','PyBank','Resources','budget_data.csv')
@@ -46,7 +46,7 @@ with open(path) as csvfile:
 average = (x3)/(i-1)
 
 
-with open("./PyBank/analysis/BankResults.txt", "w") as external_file:
+with open("analysis/BankResults.txt", "w") as external_file:
     print('Financial Analysis\n------------------\nTotal Months:',i,file=external_file)
     print('Total:',"${:.2f}".format(profit),file=external_file)
     print('Average Change:',"${:,.2f}".format(average),file=external_file)
